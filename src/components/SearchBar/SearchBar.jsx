@@ -1,15 +1,20 @@
+import s from "./SearchBar.module.css";
+
 const SearchBar = () => {
   return (
     <div>
-      <header>
-        <form>
+      <header className={s.header}>
+        <form className={s.form}>
           <input
+            className={s.input}
             type="text"
-            autocomplete="off"
-            autofocus
+            autoComplete="off"
+            autoFocus
             placeholder="Search images and photos"
           />
-          <button type="submit">Search</button>
+          <button className={s.btn} type="submit">
+            Search
+          </button>
         </form>
       </header>
     </div>
